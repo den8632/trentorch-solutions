@@ -8,8 +8,6 @@ def summation(f, lo, hi):
         Sum_{i=lo}^{hi} f(i), the sum of f(i) for every integer i from
         lo to hi, both ends included. If hi < lo, the sum is empty (0).
     """
-    # TODO: Implement the summation from Theory as an explicit loop.
-
     sum = 0
     
     for i in range(lo, hi + 1):
