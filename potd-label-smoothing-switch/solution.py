@@ -9,7 +9,7 @@ def label_smoothing(logits: np.ndarray, y: int, eps: float) -> tuple[np.ndarray,
     q[c] = 1 - eps + eps/C for c == y, else eps/C.
     loss = -sum(q * log_softmax(logits)).
 
-    Return (q, loss)
+    Return (q, loss).
     """
     logits = np.asarray(logits, dtype=float)
     C = len(logits)
